@@ -1,0 +1,18 @@
+{
+  "name": "provinces-cities-api",
+  "version": "1.0.0",
+  "description": "Node.js Rest API for provinces and cities",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "androsyahreza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.27.0",
+    "sequelize-cli": "^6.5.2"
+  }
+}
