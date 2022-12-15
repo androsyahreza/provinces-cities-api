@@ -19,7 +19,7 @@ Please note that to run this application, the first thing to do is create a data
 ```
 CREATE DATABASE provinces_cities_api;
 ```
-Don't forget to configure the database username and password on `/config/config.json`
+Don't forget to configure the database **username** and **password** on `/config/config.json`
 
 Database model can be created using the following command:
 ```
@@ -82,6 +82,8 @@ RESTful API Endpoints are shown in the table below:
 | POST | /cities | Create new city |
 | PUT | /cities{id} | Update a city |
 | DELETE | /cities{id} | Delete a city |
+
+You can test this API endpoint by using the postman application. please [Click Here](/assets/postman-collection) to download the **postman collection** that was created for this project.
 
 ## Setup
 To run this project, install it locally using npm:
