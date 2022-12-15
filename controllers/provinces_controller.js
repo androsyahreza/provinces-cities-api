@@ -27,6 +27,25 @@ exports.provincesList = (req, res) => {
 
 exports.provincesDetail = (req, res) => {
   const provinceId = req.params.id;
+  models.Provinces.findOne({ where: {id: provinceId} })
+    .then((data) => {
+      if (data) {
+        res.send(data);
+      } else {
+        res.status(404).send({
+          message: `Cannot find Province with id = ${provinceId}.`
+        });
+      }
+    })
+    .catch((error) => {
+      res.status(500).send({
+        message: error.message
+      });
+    })
+};
+
+exports.provincesIncludeCity = (req, res) => {
+  const provinceId = req.params.id;
   models.Provinces.findOne({
     where: {id: provinceId},
     include: [{
@@ -48,7 +67,7 @@ exports.provincesDetail = (req, res) => {
         message: error.message
       });
     })
-};
+}
 
 exports.provincesUpdate = (req, res) => {
   const provinceId = req.params.id;

@@ -8,6 +8,7 @@ const citiesController = require("../controllers/cities_controller");
 // Provinces Routes
 router.get("/provinces", provincesController.provincesList);
 router.get("/provinces/:id", provincesController.provincesDetail);
+router.get("/provinces/:id/city", provincesController.provincesIncludeCity);
 router.post("/provinces", provincesController.provincesCreate);
 router.put("/provinces/:id", provincesController.provincesUpdate);
 router.delete("/provinces/:id", provincesController.provincesDelete);
