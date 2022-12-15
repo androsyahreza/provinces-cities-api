@@ -71,19 +71,19 @@ Project is created with:
 RESTful API Endpoints are shown in the table below:
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| GET | /provinces | List of provinces |
-| GET | /provinces/{id} | View a province |
-| GET | /provinces/{id}/city | View a province include cities |
-| POST | /provinces | Create new province |
-| PUT | /provinces{id} | Update a province |
-| DELETE | /provinces{id} | Delete a province |
-| GET | /cities | List of cities |
-| GET | /cities/{id} | View a city |
-| POST | /cities | Create new city |
-| PUT | /cities{id} | Update a city |
-| DELETE | /cities{id} | Delete a city |
+| GET | `/provinces` | List of provinces |
+| GET | `/provinces/{id}` | View a province |
+| GET | `/provinces/{id}/city` | View a province include cities |
+| POST | `/provinces` | Create new province |
+| PUT | `/provinces{id}` | Update a province |
+| DELETE | `/provinces{id}` | Delete a province |
+| GET | `/cities` | List of cities |
+| GET | `/cities/{id}` | View a city |
+| POST | `/cities` | Create new city |
+| PUT | `/cities{id}` | Update a city |
+| DELETE | `/cities{id}` | Delete a city |
 
-You can test this API endpoint by using the postman application. please [Click Here](/assets/postman-collection) to download the **postman collection** that was created for this project.
+You can test this API endpoint by using the postman application. please [**Click Here**](/assets/postman-collection) to download the **postman collection** that was created for this project.
 
 ## Setup
 To run this project, install it locally using npm:
