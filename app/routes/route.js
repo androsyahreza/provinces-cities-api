@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 // Require controller modules
-const provincesController = require("../../controllers/provinces_controller");
-const citiesController = require("../../controllers/cities_controller");
+const provincesController = require("../controllers/provinces_controller");
+const citiesController = require("../controllers/cities_controller");
 
 // Provinces Routes
 router.get("/provinces", provincesController.provincesList);

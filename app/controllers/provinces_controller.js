@@ -1,4 +1,4 @@
-const models = require("../models/index");
+const models = require("../../models/index");
 
 exports.provincesCreate = (req, res) => {
   const province = { name : req.body.name };

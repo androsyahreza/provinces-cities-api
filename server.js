@@ -1,4 +1,4 @@
-const router = require("./routes/route");
+const router = require("./app/routes/route");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
